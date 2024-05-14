@@ -1,10 +1,17 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { createCustomer } from "./customerSlice";
 
 function Customer() {
+
+  const dispatch = useDispatch();
+
   const [fullName, setFullName] = useState("");
   const [nationalId, setNationalId] = useState("");
 
-  function handleClick() {}
+  function handleClick() {
+    dispatch(createCustomer("Kings", 787898))
+  }
 
   return (
     <div>
