@@ -14,7 +14,7 @@ function AccountOperations() {
 
   console.log(balance)
 
-  function handleDeposit() {
+  function handleDeposit()  {
     if (!depositAmount) return;
     dispatch(deposit(depositAmount, currency));
     setDepositAmount("");
