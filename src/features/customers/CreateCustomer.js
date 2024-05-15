@@ -10,7 +10,7 @@ function Customer() {
   const [nationalId, setNationalId] = useState("");
 
   function handleClick() {
-    dispatch(createCustomer("Kings", 787898))
+    dispatch(createCustomer(fullName, nationalId))
   }
 
   return (
