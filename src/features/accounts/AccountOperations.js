@@ -47,6 +47,7 @@ function AccountOperations() {
           <input
             type="number"
             value={depositAmount}
+            //inialy added plus to
             onChange={(e) => setDepositAmount(e.target.value)}
           />
           <select
@@ -59,7 +60,7 @@ function AccountOperations() {
           </select>
 
           <button onClick={handleDeposit} disabled={isLoading}>
-            {isLoading ? "Coverting" : `Deposit ${depositAmount}`}
+            {isLoading ? "Coverting..." : `Deposit ${depositAmount}`}
           </button>
         </div>
 
